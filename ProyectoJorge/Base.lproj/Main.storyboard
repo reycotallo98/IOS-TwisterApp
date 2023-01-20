@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoJorge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="vsl-TY-ljm">
+                                <rect key="frame" x="75" y="322" width="279" height="245"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo-TWISTER.png" translatesAutoresizingMaskIntoConstraints="NO" id="J97-6S-opO">
+                                <rect key="frame" x="94" y="36" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="A4V-QC-t4S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-qF-oKG">
+                                <rect key="frame" x="75" y="197" width="279" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="myr-Zx-VRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm5-5K-T14">
+                                <rect key="frame" x="75" y="613" width="279" height="69"/>
+                                <color key="backgroundColor" red="1" green="0.33622709449999999" blue="0.25621292109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.94999999999999996" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="5wO-pu-uh1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="tintColor" red="1" green="0.3362270945049507" blue="0.256212921137564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="TWIST">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pulsar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftZ-bw-3r0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52550311833278984" green="0.64596367922156128" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.36178264073979771" blue="0.2817561479811338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J97-6S-opO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="1ag-zL-xDK"/>
+                            <constraint firstItem="Vm5-5K-T14" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESs-AM-qQ0"/>
+                            <constraint firstItem="A2s-qF-oKG" firstAttribute="leading" secondItem="vsl-TY-ljm" secondAttribute="leading" id="Mqg-GA-3wd"/>
+                            <constraint firstItem="J97-6S-opO" firstAttribute="centerX" secondItem="A2s-qF-oKG" secondAttribute="centerX" id="NIn-zw-b43"/>
+                            <constraint firstItem="Vm5-5K-T14" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="P3b-yq-bQC"/>
+                            <constraint firstItem="J97-6S-opO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="aWQ-cN-iAZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vm5-5K-T14" secondAttribute="bottom" constant="196" id="bm6-ji-oGj"/>
+                            <constraint firstItem="A2s-qF-oKG" firstAttribute="top" secondItem="J97-6S-opO" secondAttribute="bottom" constant="33" id="iju-am-enD"/>
+                            <constraint firstItem="vsl-TY-ljm" firstAttribute="top" secondItem="A2s-qF-oKG" secondAttribute="bottom" constant="54" id="jLB-us-rOP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2s-qF-oKG" secondAttribute="trailing" constant="60" id="jqY-eT-COt"/>
+                            <constraint firstItem="Vm5-5K-T14" firstAttribute="top" secondItem="vsl-TY-ljm" secondAttribute="bottom" constant="30" id="mmv-9A-hYz"/>
+                            <constraint firstItem="A2s-qF-oKG" firstAttribute="trailing" secondItem="vsl-TY-ljm" secondAttribute="trailing" id="nlT-DK-l6h"/>
+                            <constraint firstItem="A2s-qF-oKG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="vjZ-ln-Mp6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="boton" destination="Vm5-5K-T14" id="6cH-sf-26l"/>
+                        <outlet property="imagen" destination="vsl-TY-ljm" id="Ldw-2o-FYB"/>
+                        <outlet property="resultado" destination="A2s-qF-oKG" id="QdA-pB-d5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imagen1.png" width="701" height="720"/>
+        <image name="logo-TWISTER.png" width="350" height="183"/>
+    </resources>
+    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
